@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+.container-hero {
+  height: 100%vh;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-bottom: 100px;
+}
+
+.container-hero h1 {
+  padding-top: 100px;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+
+.nav-links a:hover {
+  color: #dee058;
+}
+
+.hero {
+  background: rgb(34,193,195);
+  background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  color: #333;
+  padding: 100px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  max-width: 800px;
+}
+
+.hero .btn {
+  text-decoration: none;
+  color: white;
+  background: #333;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero .btn:hover {
+  background: #555;
+}
+
+.about {
+  padding: 50px 20px;
+  background: #fdbb2d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about .container-about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.about-image {
+  flex: 1;
+  padding: 20px;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  padding-bottom: 150px;
+}
+
+.about-text {
+  flex: 2;
+  padding: 20px;
+}
+
+.about-text h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.contact {
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#contact {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 70px;
+}
+
+.contact-info {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-info p {
+  margin: 0;
+}
+
+.contact-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin: 10px 0 5px;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .nav-links li {
+      text-align: center;
+      margin: 10px 0;
+  }
+
+  .menu-toggle {
+      display: flex;
+  }
+
+  .nav-active .nav-links {
+      display: flex;
+  }
+
+  .hero h1 {
+      font-size: 32px;
+  }
+
+  .hero p {
+      font-size: 16px;
+  }
+
+  .about {
+      flex-direction: column;
+  }
+
+  .about .container-about {
+      flex-direction: column;
+  }
+
+  .about-image,
+  .about-text {
+      padding: 0;
+  }
+
+  .about-text h2 {
+      font-size: 28px;
+  }
+
+  .about-text p {
+      font-size: 16px;
+  }
+}
