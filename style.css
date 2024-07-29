@@ -224,14 +224,15 @@ nav {
 
 @media (max-width: 768px) {
   .nav-links {
-      display: none;
-      flex-direction: column;
+      display: flex;
+      flex-direction: row;
       width: 100%;
   }
 
   .nav-links li {
       text-align: center;
       margin: 10px 0;
+      margin-left: 10px;
   }
 
   .menu-toggle {
@@ -261,6 +262,11 @@ nav {
   .about-image,
   .about-text {
       padding: 0;
+  }
+
+  .about-image img {
+    padding-bottom: 10px;
+
   }
 
   .about-text h2 {
