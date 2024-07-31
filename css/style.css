@@ -119,12 +119,8 @@ nav {
   align-items: center;
 }
 
-.about-image {
-  padding: 20px;
-}
-
 .about-image img {
-  height: 100%;
+  height: 500px;
   border-radius: 50px;
   margin-bottom: 150px;
 }
@@ -247,32 +243,28 @@ nav {
   }
 
   .hero p {
-      font-size: 16px;
-  }
-
-  .about {
-      flex-direction: column;
+    font-size: 16px;
   }
 
   .about .container-about {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .about-image,
   .about-text {
-      padding: 0;
+    padding: 0;
   }
 
   .about-image img {
-    padding-bottom: 10px;
-
+    height: 400px;
+    margin-bottom: 0;
   }
 
   .about-text h2 {
-      font-size: 28px;
+    font-size: 28px;
   }
 
   .about-text p {
-      font-size: 16px;
+    font-size: 16px;
   }
 }
