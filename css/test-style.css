@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 80vh;
+  width: 90vw;
+  border-radius: 10px;
+  display: grid;
+  padding: 10px;
+}
+
+.container .icon {
+  padding-left: 1vw;
+  padding-top: 1vw;
+}
+
+.container .icon a {
+  color: inherit;
+}
+
+.container0 {
+  height: 20vh;
+  width: 80vw;
+  justify-self: center;
+  border: 1px solid #808080;
+  border-radius: 10px;
+}
+
+.container1 {
+  height: 40vh;
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap; /* Membungkus elemen ke baris baru jika melebihi lebar container */
+  gap: 10px; /* Jarak antar elemen */
+  padding: 10px;
+  border-radius: 10px;
+  justify-self: center;
+}
+
+.pil {
+  flex: 1 1 40%; /* Elemen akan memiliki lebar sekitar 30%, tetapi bisa menyusut atau membesar */
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.pil h3 {
+  padding-top: 10px;
+}
+
+.pil:hover {
+  background-color: lightgreen;
+  transition: 0.5s;
+  cursor: pointer;
+}
